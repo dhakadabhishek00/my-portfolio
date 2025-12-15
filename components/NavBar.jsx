@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,18 +9,19 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink- 0">
-            <a href="#home" className="text-2xl font-bold tracking-wide">
+            <Link to="#home" className="text-2xl font-bold tracking-wide">
               MyPortfolio
-            </a>
+            </Link>
 
           </div>
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-8">
-            <a href="/about" className="hover:text-indigo-400 transition">About</a>
-            <a href="/projects" className="hover:text-indigo-400 transition">Projects</a>
-            <a href="/skills" className="hover:text-indigo-400 transition">Skills</a>
-            <a href="/contact" className="hover:text-indigo-400 transition">Contact Us</a>
+             <Link to="/" className="hover:text-indigo-400 transition">Home</Link>
+            <Link to="/about" className="hover:text-indigo-400 transition">About</Link>
+            <Link to="/projects" className="hover:text-indigo-400 transition">Projects</Link>
+            <Link to="/skills" className="hover:text-indigo-400 transition">Skills</Link>
+            <Link to="/contact" className="hover:text-indigo-400 transition">Contact Us</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -38,10 +39,11 @@ const Navbar = () => {
       {/* Mobile Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-gray-800 px-4 pb-4 space-y-2">
-          <a href="/about" className="block hover:text-indigo-400">About</a>
-          <a href="/projects" className="block hover:text-indigo-400">Projects</a>
-          <a href="/skills" className="block hover:text-indigo-400">Skills</a>
-          <a href="/contact" className="block hover:text-indigo-400">Contact Us</a>
+          <Link to="/" className="block hover:text-indigo-400">Home</Link>
+          <Link to="/about" className="block hover:text-indigo-400">About</Link>
+          <Link to="/projects" className="block hover:text-indigo-400">Projects</Link>
+          <Link to="/skills" className="block hover:text-indigo-400">Skills</Link>
+          <Link to="/contact" className="block hover:text-indigo-400">Contact Us</Link>
         </div>
       )}
     </nav>

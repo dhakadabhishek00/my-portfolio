@@ -23,7 +23,7 @@ const About = () => {
           {/* Text */}
           <div className="text-gray-700 md:w-3/4">
             <p className="text-lg leading-relaxed mb-4">
-              Hi, I’m <span className="font-semibold">Kumar</span>, a
+              Hi, I’m <span className="font-semibold">Abhishek Kumar</span>, a
               passionate full-stack developer who loves building dynamic web
               applications with clean, scalable code. I enjoy solving complex
               problems, optimizing performance, and creating user-friendly
