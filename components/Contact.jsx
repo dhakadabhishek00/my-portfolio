@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -15,11 +14,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-
-    console.log(e.target);
     const regex = new RegExp("^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$");
-
 
     if (!regex.test(formData.email)) {
       alert("enter valid email");
@@ -39,27 +34,23 @@ const Contact = () => {
       name: "",
       email: "",
       subject: "",
-      
       message: "",
     });
   };
 
   return (
     <section id="contact" className="bg-gray-100 py-16">
-    <div className="max-w-md mx-auto px-4">
+      <div className="max-w-md mx-auto px-4">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
           Contact Me
         </h2>
 
         <form
-  onSubmit={handleSubmit}
-  className="sticky top-24 max-w-md mx-auto bg-white shadow-lg rounded-lg p-6 space-y-6"
->
-          {/* Name */}
+          onSubmit={handleSubmit}
+          className="sticky top-24 max-w-md mx-auto bg-white shadow-lg rounded-lg p-6 space-y-6"
+        >
           <div>
-            <label className="block text-gray-700 font-medium mb-2">
-              Name
-            </label>
+            <label className="block text-gray-700 font-medium mb-2">Name</label>
             <input
               type="text"
               name="name"
@@ -70,7 +61,6 @@ const Contact = () => {
             />
           </div>
 
-          {/* Email */}
           <div>
             <label className="block text-gray-700 font-medium mb-2">
               Email
@@ -85,7 +75,6 @@ const Contact = () => {
             />
           </div>
 
-          {/* Subject */}
           <div>
             <label className="block text-gray-700 font-medium mb-2">
               Subject
@@ -100,8 +89,6 @@ const Contact = () => {
             />
           </div>
 
-
-          {/* Message */}
           <div>
             <label className="block text-gray-700 font-medium mb-2">
               Message

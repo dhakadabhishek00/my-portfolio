@@ -4,26 +4,22 @@ const About = () => {
   return (
     <section id="about" className="bg-gray-100 py-16">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
-        {/* Heading */}
         <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
           About Me
         </h2>
 
-        {/* Content */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
-          {/* Profile Image */}
           <div className="flex-shrink- 0">
             <img
-              src="src\assets\profile.jpg" // replace with your image path
+              src="/assets\mylogo.jpg"
               alt="Profile"
               className="w-40 h-40 rounded-full shadow-lg border-4 border-indigo-500"
             />
           </div>
 
-          {/* Text */}
           <div className="text-gray-700 md:w-3/4">
             <p className="text-lg leading-relaxed mb-4">
-              Hi, I’m <span className="font-semibold">Abhishek Kumar</span>, a
+              Hi, I’m <span className="font-semibold">Abhishek Dhakad</span>, a
               passionate full-stack developer who loves building dynamic web
               applications with clean, scalable code. I enjoy solving complex
               problems, optimizing performance, and creating user-friendly

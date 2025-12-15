@@ -1,6 +1,8 @@
 import React from "react";
 
 const skills = [
+  "Html",
+  "CSS",
   "React",
   "Tailwind CSS",
   "JavaScript",
@@ -15,12 +17,10 @@ const Skills = () => {
   return (
     <section id="skills" className="bg-gray-100 py-16">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        {/* Heading */}
         <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
           Skills
         </h2>
 
-        {/* Skills Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {skills.map((skill, index) => (
             <div
