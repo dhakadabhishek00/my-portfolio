@@ -15,8 +15,8 @@ const Navbar = () => {
               alt="My Profile"
               className="w-10 h-10 rounded-full object-cover border-2 border-indigo-500"
             />
-            <Link to="/" className="text-2xl font-bold tracking-wide">
-              MyPortfolio
+            <Link to="/" className="text-2xl font-bold tracking-wide typinglogo">
+              Abhishek Dhakad
             </Link>
           </div>
 
